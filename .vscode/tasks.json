@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build js",
+			"type": "shell",
+			"command": "dart2js web/main.dart -o web/main.dart.js",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "serve",
+			"type": "shell",
+			"command": "dart bin/server.dart",
+			"dependsOn": "build js",
+			"problemMatcher": []
+		}
+	]
+}

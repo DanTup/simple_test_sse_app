@@ -1,0 +1,11 @@
+name: simple_sse
+description: Testing stuff.
+
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+
+dependencies:
+  shelf:
+  shelf_static:
+  sse:
+
